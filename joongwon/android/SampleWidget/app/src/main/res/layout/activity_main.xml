@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity" >
+
+    <EditText
+        android:id="@+id/editTextTextPersonName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:textColor="#FFFF0000"
+        android:typeface="serif"
+        android:text="@string/person_name" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#88aabbff"
+        android:padding="4dp"
+        android:text="여기에 사용자 이름을 입력하세요. 일므은 한 줄로 표시됩니다."
+        android:textSize="40sp"
+        android:textStyle="bold"
+        android:maxLines="1"
+        android:gravity="center" />
+</LinearLayout>
