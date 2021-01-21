@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.sampleorientation2">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.SampleOrientation2">
+        <activity android:name=".MainActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"> <!--방향전환을 알 수 있도록 config chages속성-->
+            <!--단말의 방향이 바뀔 때마다 액티비티에서 인식할 수 있다 바뀌는 시점에서 컨피그체인지메소드가 자동호출
+            키보드하이드는 단말방향과 상관 없으나 자주 사용된다, 키패드가 자동으로 나타나지 않고 키패드가 보여야 할
+            시점을 액티비티 쪽에 알려주기만한다-->
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
