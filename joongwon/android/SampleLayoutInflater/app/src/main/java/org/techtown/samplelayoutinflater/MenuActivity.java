@@ -22,9 +22,11 @@ public class MenuActivity extends AppCompatActivity {
 
         Button button = findViewById(R.id.button);
         button.setOnClickListener(new View.OnClickListener() {
+
             @Override
             public void onClick(View v) {
-                LayoutInflater inflater = (LayoutInflater) getSystemService(Context.LAYOUT_INFLATER_SERVICE);
+                LayoutInflater inflater =
+                        (LayoutInflater) getSystemService(Context.LAYOUT_INFLATER_SERVICE);
                 // 인틀레이터 객체를 사용하여 부분 레이아웃 sub1.xml 내용을 메모리에 객체화
                 inflater.inflate(R.layout.sub1, container, true);
                 CheckBox checkBox = container.findViewById(R.id.checkBox);
