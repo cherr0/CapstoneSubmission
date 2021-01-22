@@ -34,7 +34,7 @@ public class MainActivity extends AppCompatActivity {
             int xOffset = Integer.parseInt(editText.getText().toString());
             int yOffset = Integer.parseInt(editText2.getText().toString());
 
-            toastView.setGravity(Gravity.TOP|Gravity.TOP, xOffset, yOffset);
+            toastView.setGravity(Gravity.TOP|Gravity.BOTTOM, xOffset, yOffset);
             toastView.show();
         }catch (NumberFormatException e) {
             e.printStackTrace();
