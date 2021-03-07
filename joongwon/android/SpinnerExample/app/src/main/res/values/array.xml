@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="test">
+        <item>서울</item>
+        <item>대구</item>
+        <item>경산</item>
+        <item>포항</item>
+    </string-array>
+</resources>
